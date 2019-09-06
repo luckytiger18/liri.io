@@ -63,9 +63,13 @@ function doWhatItSays() {
                 fileInput = "mr.nobody";
             }
             getMovie(fileInput);
-        } else if (fileOperation == "concert-this") {
+        } 
+
+        if (fileOperation == "concert-this") {
             getConcert(fileInput);
-        } else if (fileOperation == "spotify-this-song") {
+        } 
+
+        if (fileOperation == "spotify-this-song") {
             if (fileInput == undefined) {
                 fileInput = 'The Sign Ace of Base';
             }
@@ -79,15 +83,19 @@ if (operation == "movie-this") {
         input = "mr.nobody";
     }
     getMovie(input);
+}
 
-} else if (operation == "concert-this") {
+if (operation == "concert-this") {
     getConcert(input);
+} 
 
-} else if (operation == "spotify-this-song") {
+if (operation == "spotify-this-song") {
     if (input == undefined) {
         input = 'The Sign Ace of Base';
     }
     getMusic(input);
-} else if (operation == "do-what-it-says") {
+} 
+
+if (operation == "do-what-it-says") {
     doWhatItSays();
 }
